@@ -18,6 +18,8 @@ def changePossibilities(amount, denom):
             while sum(to) < amount:
                 to.append(test)
                 if sum(to) == amount and notAlredy(alredy, to):
+                    print(to)
+                    print("")
                     alredy.append(copy(to))
                     posib += 1
             del to[1:]
@@ -28,3 +30,4 @@ def notAlredy(a, c):
     if Counter(l) == Counter(c):
       return False
   return True
+
