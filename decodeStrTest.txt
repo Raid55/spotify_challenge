@@ -1,0 +1,19 @@
+
+The ``decodeString`` module
+======================
+
+
+import module:
+	>>> decodeString = __import__('decodeString').decodeString
+
+test 1:
+    >>> decodeString("4[ab]")
+    'abababab'
+
+test 2:
+    >>> decodeString("2[b3[a]]")
+    'baaabaaa'
+
+test 3:
+    >>> decodeString("4[c3[a2[b]]]")
+    'cabbabbabbcabbabbabbcabbabbabbcabbabbabb'

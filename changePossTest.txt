@@ -1,0 +1,18 @@
+
+The ``changePossibilities.py`` module
+======================
+
+import module:
+	>>> changePossibilities = __import__('changePossibilities').changePossibilities
+
+test 1:
+    >>> changePossibilities(4, [1, 2, 3])
+    4
+
+test 2:
+    >>> changePossibilities(5, [1, 2, 5, 2])
+    4
+
+test 3:
+    >>> changePossibilities(10, [1, 2, 5, 2, 10])
+    

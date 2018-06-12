@@ -1,0 +1,19 @@
+
+The ``sortByStrings`` module
+======================
+
+
+import module:
+	>>> sortByStrings = __import__('sortByStrings').sortByStrings
+
+test 1:
+    >>> sortByStrings("weather", "therapyw")
+    'theeraw'
+
+test 2:
+    >>> sortByStrings("good", "odg")
+    'oodg'
+
+test 3:
+    >>> sortByStrings("hallo warold", "adhlorw")
+    'aadhllloorw'
